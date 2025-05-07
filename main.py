@@ -31,7 +31,7 @@ class HealthData(BaseModel):
 
 # Record health parameters
 @app.post("/health-data")
-async def record_health_data(uid: str, data: HealthData):
+async def record_health_data(data: HealthData):
     try:
         # Store health data
         health_record = {
