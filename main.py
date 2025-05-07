@@ -24,7 +24,7 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 # Pydantic model for health data
 class HealthData(BaseModel):
     uid: str
-    heart_rate: float
+    heart_rate: int
     temperature: float
     blood_pressure: str
     oxygen_saturation: float
